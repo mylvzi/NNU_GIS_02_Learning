@@ -194,23 +194,23 @@
 //	return 0;
 //}
 
-void swap(char* a, char* b) {
-	char tmp = *a; *a = *b; *b = tmp;
-}
-void reverse(char* str) {
-	// 注意此处有坑： char* begin, end = str; begin是char*，但是end是char
-	// char *begin = str, *end = str + strlen(str) - 1;
-	char *begin = str, *end = str + strlen(str) - 1;
-	while (begin < end) swap(begin++, end--);
-}
+//void swap(char* a, char* b) {
+//	char tmp = *a; *a = *b; *b = tmp;
+//}
+//void reverse(char* str) {
+//	// 注意此处有坑： char* begin, end = str; begin是char*，但是end是char
+//	// char *begin = str, *end = str + strlen(str) - 1;
+//	char *begin = str, *end = str + strlen(str) - 1;
+//	while (begin < end) swap(begin++, end--);
+//}
 // reverse str
-int main() {
-	char str[] = "abcd";
-	printf("反转前：%s\n", str);
-	reverse(str);
-	printf("反转后：%s", str);
-	return 0;
-}
+//int main() {
+//	char str[] = "abcd";
+//	printf("反转前：%s\n", str);
+//	reverse(str);
+//	printf("反转后：%s", str);
+//	return 0;
+//}
 
 
 
